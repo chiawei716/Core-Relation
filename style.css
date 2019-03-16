@@ -62,7 +62,7 @@ body{
 
 #left-bottom-bubble{
   position: absolute;
-  top: 625px;
+  top: 544px;
   left: -166px;
   opacity: 0.9532;
   z-index:2;
@@ -70,6 +70,7 @@ body{
   animation-duration: 6s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  border: 1px solid green;
 }
 
 #right-bottom-bubble{
@@ -85,9 +86,10 @@ body{
 
 #overview{
   position: absolute;
-  top: 194px;
+  top: 113px;
   left: 66px;
   z-index: 1;
+  border: 1px solid green;
 }
 
 #Core-relation-IoT-pl{
