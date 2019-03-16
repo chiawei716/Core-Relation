@@ -79,7 +79,7 @@ body{
   left: 968px;
   opacity: 0.9532;  
   animation-name: r_b;
-  animation-duration: 7s;
+  animation-duration: 7s, 3.5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
