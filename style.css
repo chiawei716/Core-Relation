@@ -108,9 +108,21 @@ body{
     position: relative;
     top: 0px;
   }
+  25%{
+    position: relative;
+    top: 25px;
+  }
+  50%{
+    position: relative;
+    top: 0px;
+  }
+  75%{
+    position: relative;
+    top: -25px;
+  }
   100%{
     position: relative;
-    top: -50px;
+    top: 0px;
   }
 }
 
