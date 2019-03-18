@@ -158,8 +158,7 @@ body > #Overview{
   top: 5.39rem;
   width: 19.08rem;
   height: 15.67rem;
-  opacity: 0;
-  animation: overview_emerge, 2s, 1s, forwards;
+  animation: overview_emerge 3s linear 0s normal;
 }
 
 @keyframes overview_emerge{
@@ -167,7 +166,7 @@ body > #Overview{
     opacity: 0;
     transform: translateY(1rem);
   }
-  20%{
+  33%{
     opacity: 0;
     transform: translateY(1rem);
   }
@@ -183,8 +182,7 @@ body > #Content{
   top: 13.22rem;
   width: 14.75rem;
   height: 5.72rem;
-  opacity: 0;
-  animation: content_emerge, 2s, 1s, forwards;
+  animation: content_emerge 3s linear 0s normal;
 }
 
 @keyframes content_emerge{
@@ -192,7 +190,7 @@ body > #Content{
     opacity: 0;
     transform: translateX(-1rem);
   }
-  20%{
+  33%{
     opacity: 0;
     transform: translateX(-1rem);
   }
