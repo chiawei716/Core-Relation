@@ -58,7 +58,7 @@ body > #Header > .Options > .Sign_up{
     opacity: 0;
     transform: translateY(1.5rem);
   }
-  60%{
+  66%{
     opacity: 0;
     transform: translateY(1.5rem);
   }
@@ -73,7 +73,7 @@ body > #Header > .Options > .Sign_up{
     opacity: 0;
     transform: translateY(1.5rem);
   }
-  60%{
+  66%{
     opacity: 0;
     transform: translateY(1.5rem);
   }
@@ -91,8 +91,8 @@ body > #l_b_bubble{
   height: 10.28rem;
   width: 15.33rem;
   animation-name: l_b, emerge_l_b;
-  animation-duration: 7s, 5s;
-  animation-delay: 5s, 0s;
+  animation-duration: 7s, 6s;
+  animation-delay: 6s, 0s;
   animation-iteration-count: infinite, 1;
   animation-direction: alternate;
   z-index: 1;
@@ -114,8 +114,8 @@ body > #m_t_bubble{
   height: 8.86rem;
   width: 13.22rem;
   animation-name: m_t, late_emerge;
-  animation-duration: 8s, 5s;
-  animation-delay: 5s, 0s;
+  animation-duration: 8s, 6s;
+  animation-delay: 6s, 0s;
   animation-iteration-count: infinite, 1;
   animation-direction: alternate;
   z-index: -1;
@@ -137,8 +137,8 @@ body > #r_b_bubble{
   height: 18.22rem;
   width: 24.61rem;
   animation-name: r_b, late_emerge;
-  animation-duration: 10s, 5s;
-  animation-delay: 5s, 0s;
+  animation-duration: 10s, 6s;
+  animation-delay: 6s, 0s;
   animation-iteration-count: infinite, 1;
   animation-direction: alternate;
 }
@@ -166,7 +166,7 @@ body > #Overview{
     opacity: 0;
     transform: translateY(1rem);
   }
-  33%{
+  20%{
     opacity: 0;
     transform: translateY(1rem);
   }
@@ -190,7 +190,7 @@ body > #Content{
     opacity: 0;
     transform: translateX(-1rem);
   }
-  33%{
+  20%{
     opacity: 0;
     transform: translateX(-1rem);
   }
