@@ -1,5 +1,4 @@
-body, 
-html{
+html, body{
   font-size: 36px;
   margin: 0;
   background: rgba(178, 223, 219, 0.13);
@@ -8,7 +7,6 @@ html{
   overflow-x: hidden;
   z-index: -1;
 }
-
 
 body > #Header{
   display: flex;
@@ -38,30 +36,21 @@ body > #Header > .Options{
 }
 
 body > #Header > .Options > .Op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
   height: 100%;
   font-size: 0.5rem;
   color: rgba(0, 0, 0, 0.87);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body > #Header > .Options > .Op:hover{
   background-color: #eeeeee;
 }
 
-body > #Header > .Options > .Sign-up{
+body > #Header > .Options > .Sign_up{
   color: #2f96a5;
-}
-
-@keyframes emerge{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
 }
 
 @keyframes emerge_l_b{
@@ -79,7 +68,7 @@ body > #Header > .Options > .Sign-up{
   }
 }
 
-@keyframes b_emerge{
+@keyframes late_emerge{
   0%{
     opacity: 0;
     transform: translateY(1.5rem);
@@ -105,7 +94,7 @@ body > #l_b_bubble{
   animation-duration: 7s, 5s;
   animation-delay: 5s, 0s;
   animation-iteration-count: infinite, 1;
-  animation-direction: alternate, normal;
+  animation-direction: alternate;
   z-index: 1;
 }
 
@@ -124,11 +113,11 @@ body > #m_t_bubble{
   top: 2.8rem;
   height: 8.86rem;
   width: 13.22rem;
-  animation-name: m_t, b_emerge;
+  animation-name: m_t, late_emerge;
   animation-duration: 8s, 5s;
   animation-delay: 5s, 0s;
   animation-iteration-count: infinite, 1;
-  animation-direction: alternate, normal;
+  animation-direction: alternate;
   z-index: -1;
 }
 
@@ -147,11 +136,11 @@ body > #r_b_bubble{
   top: 16.08rem;
   height: 18.22rem;
   width: 24.61rem;
-  animation-name: r_b, b_emerge;
+  animation-name: r_b, late_emerge;
   animation-duration: 10s, 5s;
   animation-delay: 5s, 0s;
   animation-iteration-count: infinite, 1;
-  animation-direction: alternate, normal;
+  animation-direction: alternate;
 }
 
 @keyframes r_b{
@@ -170,17 +159,20 @@ body > #Overview{
   width: 19.08rem;
   height: 15.67rem;
   opacity: 0;
-  animation-name: emerge, overview_emerge;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation: overview_emerge, 2s, 1s, forwards;
 }
 
 @keyframes overview_emerge{
   0%{
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  20%{
+    opacity: 0;
     transform: translateY(1rem);
   }
   100%{
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -192,21 +184,23 @@ body > #Content{
   width: 14.75rem;
   height: 5.72rem;
   opacity: 0;
-  animation-name: emerge, content_emerge;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  animation: content_emerge, 2s, 1s, forwards;
 }
 
 @keyframes content_emerge{
   0%{
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  20%{
+    opacity: 0;
     transform: translateX(-1rem);
   }
   100%{
+    opacity: 1;
     transform: translateX(0);
   }
 }
-
 
 body > #Content > .Title{
   margin: 0;
@@ -234,8 +228,7 @@ body > #Content > .button{
   font-family: "Tsukushi A Round Gothic Regular", 'Open Sans', sans-serif;
   font-size: 0.5rem;
   transition: 0.8s;
-  animation-name: b_emerge;
-  animation-duration: 5s;
+  animation-name: late_emerge 5s;
 }
 
 body > #Content > .Try_now{
@@ -260,8 +253,3 @@ body > #Content > .Learn_more:hover{
   transform: translate(-3px, -4px);
   text-shadow: 5px 5px 7px rgba(0,0,0,0.5);
 }
-
-
-
-
-
